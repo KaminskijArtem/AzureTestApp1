@@ -26,6 +26,13 @@ namespace AzureTestApp1.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult SetVar(int variable)
+        {
+            c = variable;
+            return Ok();
+        }
+
         public IActionResult Privacy()
         {
             c++;
